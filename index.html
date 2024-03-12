@@ -6,11 +6,148 @@
     <title>Multi step Form</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    
-   
+  <body id="particles-js">
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <div class="logo">
+              <a href="/images/"><span>.web</span>design</a>
+            </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p>Personal information<br /><span>20 sec to complete</span></p>
+              </li>
+              <li class="step">
+                <span>1</span>
+                <p>Contact information<br /><span>30 sec to complete</span></p>
+              </li>
+              <li class="step">
+                <span>1</span>
+                <p>Security<br /><span>60 sec to complete</span></p>
+              </li>
+            </ul>
+          </div>
+          <form action="">
+            <div class="form-one form-step active">
+              <div class="bg-svg"></div>
+              <h2>Personal information</h2>
+              <p>Enter your personal information correctly</p>
+              <div>
+                <label>First name</label>
+                <input type="text" placeholder="Your first name" />
+              </div>
+              <div>
+                <label>Last name</label>
+                <input type="text" placeholder="Your first name" />
+              </div>
+              <div class="birth">
+                <label>Date of birth</label>
+                <div class="grouping">
+                  <input
+                    type="text"
+                    patter="[0-9]*"
+                    name="day"
+                    value=""
+                    min="0"
+                    max="31"
+                    placeholder="DD"
+                  />
+                  <input
+                    type="text"
+                    patter="[0-9]*"
+                    name="month"
+                    value=""
+                    min="0"
+                    max="31"
+                    placeholder="MM"
+                  />
+                  <input
+                    type="text"
+                    patter="[0-9]*"
+                    name="year"
+                    value=""
+                    min="0"
+                    max="31"
+                    placeholder="YYYY"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2>Contact Info</h2>
+              <div>
+                <label>Phone</label>
+                <input type="tel" placeholder="+21277XXXXX" />
+              </div>
+              <div>
+                <label>Address</label>
+                <input type="text" placeholder="Street address" />
+              </div>
+              <div>
+                <input type="text" placeholder="App , suite , Building ,..." />
+              </div>
+              <div>
+                <label>City</label>
+                <input type="text" placeholder="City" />
+              </div>
+              <div>
+                <label>State</label>
+                <input type="text" placeholder="State/Province" />
+              </div>
+              <div>
+                <label>Zip code</label>
+                <input type="text" placeholder="Postal/Zip code" />
+              </div>
+              <div>
+                <label>Coiuntry</label>
+                <select name="country" id="country">
+                  <option value="">Select your country</option>
+                  <option value="morocco">morocco</option>
+                  <option value="morocco">morocco</option>
+                  <option value="morocco">morocco</option>
+                  <option value="morocco">morocco</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-three form-step">
+              <div class="bg-svg"></div>
+              <h2>Security</h2>
+              <div>
+                <label>Email</label>
+                <input type="email" placeholder="example@gmail.com" />
+              </div>
+              <div>
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username" />
+              </div>
+              <div>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" />
+              </div>
+              <div>
+                <input type="password" placeholder="confirm your password" />
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />
+                <label for="checkbox"
+                  >Recieve our news letter and special offers</label
+                >
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn-prev" disabled>Back</button>
+              <button type="button" class="btn-next">Next step</button>
+              <button type="button" class="btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/particles-app.js"></script>
-    <script src="assets/js/particles-min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particles.app.js"></script>
   </body>
 </html>
