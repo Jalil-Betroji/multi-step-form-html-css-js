@@ -113,6 +113,7 @@ img {
   display: block;
 }
 .progress ul li p {
+  display: block;
   position: relative;
   top: auto;
   font-size: inherit;
@@ -212,13 +213,13 @@ form > div.active {
 
 @media screen and (max-width: 768px) {
   *{
-    font-size: 12px;
+    font-size: 16px;
   }
   h1{
-    font-size: 14px;
+    font-size: 17px;
   }
   form label {
-    font-size: 12px;
+    font-size: 16px;
 }
   .form-box {
     flex-direction: column;
@@ -256,7 +257,7 @@ form > div.active {
     position: absolute;
     left: 30px;
     top: 20px;
-    width: 85px;
+    width: 95px;
     height: 2px;
     background-color: var(--lighter-color);
   }
@@ -273,8 +274,7 @@ form > div.active {
     display: block;
   }
   .progress ul li p {
-    position: absolute;
-    top: -2em;
+    display: none;
   }
   .btn-group [class*="btn-"] {
     background-color: var(--main-color);
