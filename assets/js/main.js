@@ -51,3 +51,17 @@ const updateProgress = () => {
     nextButton.disabled = false;
   }
 };
+
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+const handleMediaQueryChange = (mediaQuery) => {
+  if (mediaQuery.matches) {
+    const bodyElement = document.querySelector('body');
+    bodyElement.removeAttribute('id');
+    console.log('removed');
+  }
+};
+
+handleMediaQueryChange(mediaQuery);
+
+mediaQuery.addListener(handleMediaQueryChange);
